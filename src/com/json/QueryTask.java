@@ -20,13 +20,16 @@ import android.widget.TextView;
 public class QueryTask extends AsyncTask<String, Integer, String> {
 	Context context;
 	TextView txview;
+	private static final String  OPEN_API="http://web.juhe.cn:8080/environment/air/pm";
 	public QueryTask(Context context,TextView txview){
+		super();
 		this.context=context;
 		this.txview=txview;
 	}
 	@Override
 	protected String doInBackground(String... arg0) {//之前的Result 变成 String
 		// TODO Auto-generated method stub
+	
 		return null;
 	}
 
