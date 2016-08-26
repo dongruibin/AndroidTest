@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     <TextView 
+       android:id="@+id/massageText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <Button 
+        android:id="@+id/massagebutton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/massagebutton1"/>
+    
+    <Button 
+        android:id="@+id/massagebutton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/massagebutton2"/>
+     <Button 
+        android:id="@+id/massagebutton3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/massagebutton3"/>
+    
+      <Button 
+        android:id="@+id/massagebutton4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/massagebutton4"/>
+      
+        <Button 
+        android:id="@+id/massagebutton5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/massagebutton5"/>
+        
+        <Button 
+            android:id="@+id/mclear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="清除"/>
+        
+         <Button 
+            android:id="@+id/msgTest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="发送消息测试"/>
+        
+
+        
+
+</LinearLayout>

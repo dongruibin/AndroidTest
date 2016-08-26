@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prefer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".massage"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.enter.entersystem"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.enter.Register"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".test"
+            android:label="@string/app_name">
+        </activity>
+        <!-- android:name=如果不在一个类里面，一定要指明仔细的包名 -->
+        <activity 
+            android:name="com.hardware.use.hardware"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.sd.sdtest"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.servicetest.servicestest"
+            android:label="@string/app_name">
+        </activity>
+        <service 
+            android:name="com.example.servicetest.FirstService">
+            <!-- 这里不再指定label属性因为Service没有界面 -->
+            <intent-filter>
+                <!-- 为该Service组件的inter-filter配置action -->
+                <action android:name="com.service.FIRST_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.servicetest.BindService">
+            <intent-filter>
+                <action android:name="com.bindservice.BIND"/>
+            </intent-filter>
+        </service>
+        <activity 
+            android:name="com.example.servicetest.mp3test"
+            android:label="@string/app_name">
+        </activity>
+        <service
+            android:name="com.example.servicetest.Musicservice">
+        </service>
+        <activity 
+            android:name="com.example.fragment.FragmentActivity"
+            android:label="设置程序参数">
+            
+        </activity>
+        <activity 
+            android:name="com.example.fragment.preferencetest"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.net.netmain"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.groupware.asynctest"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.example.ui.uitest">
+        </activity>
+        <activity 
+            android:name="com.baidu.tts.ttstest">
+        </activity>
+        <activity 
+            android:name="com.multimedia.multimediatest">
+        </activity>
+        <activity 
+            android:name="com.example.sd.sd_all">
+        </activity>
+        <activity
+            android:name="com.json.jsonTest"></activity>
+    </application>
+
+</manifest>

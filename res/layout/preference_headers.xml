@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 切记下面的是preference-headers,之前的错误出在中间的“-” 上-->
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 指定启动指定的PreferenceFragment的列表项 -->
+    <header 
+        android:fragment="com.example.fragment.FragmentActivity$Prefs1Fragment"
+        android:icon="@drawable/ic_launcher"
+        android:title="程序选项设置"
+        android:summary="设置应用的相关选项"/>
+    <header
+        android:fragment="com.example.fragment.FragmentActivity$Prefs2Fragment"
+        android:icon="@drawable/ic_launcher"
+        android:title="界面选项设置"
+        android:summary="设置显示界面的相关选项">
+    <!-- 使用extra可以向activity传入额外的数据 -->
+    <extra 
+        android:name="website"
+        android:value="www.baidu.com"/>
+    </header>
+    <!-- 使用Intent启动指定Activity的列表项 -->
+    <header
+        android:icon="@drawable/ic_launcher"
+        android:title="使用Intent"
+        android:summary="使用Intent启动某个Activity">
+        <intent 
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.baidu.com"/>
+    </header>
+    <!-- 前两个列表通过android:fragment选项指定启动相应的PreferencesFragment,后-->
+    <!--后一个列表通过Intent子元素启动指定的Activity  -->
+    
+    
+</preference-headers>

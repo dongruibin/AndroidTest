@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  >
+	<Button 
+	    android:id="@+id/start_sv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="启动服务"/>
+	<Button 
+	    android:id="@+id/stop_sv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="关闭服务"/>
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="以下测试绑定service"/>
+
+	<Button 
+	    android:id="@+id/b_bind"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="绑定服务"/>
+	<Button 
+	    android:id="@+id/b_unbind"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="解绑服务"/>
+	<Button 
+	    android:id="@+id/get_s"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="获取Service状态"/>
+	<Button 
+	    android:id="@+id/mp3_start"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="基于service的音乐播放器"/>"
+
+    
+</LinearLayout>
