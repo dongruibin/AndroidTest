@@ -112,6 +112,8 @@
         </activity>
         <activity
             android:name="com.json.jsonTest"></activity>
+        <activity android:name="com.service.ServiceActivity"></activity>
+        <service android:name="com.service.bindService"></service>
     </application>
 
 </manifest>

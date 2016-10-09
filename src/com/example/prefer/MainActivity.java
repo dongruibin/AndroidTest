@@ -13,6 +13,7 @@ import com.groupware.asynctest;
 import com.hardware.use.hardware;
 import com.json.jsonTest;
 import com.multimedia.multimediatest;
+import com.service.ServiceActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -46,6 +47,7 @@ public class MainActivity extends Activity implements OnClickListener {
         Button button11=(Button) findViewById(R.id.button11);
         Button button12=(Button) findViewById(R.id.button12);
         Button JsonTest=(Button) findViewById(R.id.JsonTest);
+        Button ServiceTest=(Button) findViewById(R.id.serviceTest);
         //添加作为测试
          edit=(EditText) findViewById(R.id.ed1);
         //控件设置
@@ -73,9 +75,11 @@ public class MainActivity extends Activity implements OnClickListener {
         button11.setTag(11);
         button12.setOnClickListener(this);
         button12.setTag(12);
-        JsonTest.setTag(13);
+       
         JsonTest.setOnClickListener(this);
-        
+        JsonTest.setTag(13);
+        ServiceTest.setOnClickListener(this);
+        ServiceTest.setTag(14);
         
     }
     
@@ -169,6 +173,10 @@ public class MainActivity extends Activity implements OnClickListener {
 			Intent JsonIntent=new Intent();
 			JsonIntent.setClass(getApplicationContext(), jsonTest.class);
 			startActivity(JsonIntent);
+			break;
+		case 14:
+			Intent ServiceIntent=new Intent(MainActivity.this,ServiceActivity.class);
+			startActivity(ServiceIntent);
 			break;
 			default : break;
 		}

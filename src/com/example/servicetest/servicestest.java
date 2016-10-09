@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class servicestest extends Activity {//public整个包内外都可以使用
+	//日志打印
+	private static final String TAG="servicetest";
 	//启动Service方法中的变量
 	private Button start_sv,stop_sv;
 	

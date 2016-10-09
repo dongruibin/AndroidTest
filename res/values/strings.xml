@@ -16,6 +16,8 @@
     <string name="button10">组件的练习</string>
      <string name="button11">百度TTS</string>
       <string name="button12">UI练习</string>
+      <string name="button13">JsonTest</string>
+      <string name="button14">Service方式使用</string>
     <string name="first_title">练习</string>
     
     <!-- massage里面的变量 -->
@@ -25,5 +27,9 @@
     <string name="massagebutton3">发送空消息</string>
     <string name="massagebutton4">用Handler.sendMassage发送延迟消息</string>
     <string name="massagebutton5">发送延迟空消息</string>
+    
+    <!-- com.service里面使用到的变量 -->
+    <string name="startService">使用start启动service</string>
+    <string name="bindService">使用bindService启动service</string>
 
 </resources>

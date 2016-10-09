@@ -74,7 +74,14 @@
 		<Button android:id="@+id/JsonTest"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:text="JsonTest"/>
+		    android:text="@string/button13"/>
+		<!-- 新添加Button进行service练习 -->
+		<Button 
+		    android:id="@+id/serviceTest"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/button14"/>
+		"
 		<EditText 
          android:id="@+id/ed1"
          android:layout_width="fill_parent"

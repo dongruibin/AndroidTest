@@ -14,6 +14,8 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.os.IBinder;
 import android.widget.Toast;
 
+//2016-10-8描述
+//主Activity通过Intent启动对用Service，并将该Activity注册广播,在该Service里面设置好
 public class Musicservice extends Service {
 	//内部类的对象声明
 	MyReceiver serviceReceiver;
@@ -34,7 +36,7 @@ public class Musicservice extends Service {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	//重写创建方法
+	//重写创建方法---该方法只调一次
 	@Override
 	public void onCreate(){
 		//获取资源
@@ -60,7 +62,8 @@ public class Musicservice extends Service {
 			public void onCompletion(MediaPlayer arg0) {
 				// TODO Auto-generated method stub
 				current++;//播放完可以播放下一首
-				if(current>=3){
+				//if(current>=3){//改个写法
+				if(current>=musics.length){
 					current=0;
 				}
 				//发广播，通知activity更改文本框
@@ -117,6 +120,8 @@ public class Musicservice extends Service {
 					mPlayer.stop();
 					status=0x11;
 				}
+				break;//添加完善逻辑代码
+			default : break;
 			}
 			//广播通知Activity更改图标、文本框
 			Intent sendIntent=new Intent(mp3test.UPDATE_ACTION);
